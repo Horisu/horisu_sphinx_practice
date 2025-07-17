@@ -16,6 +16,7 @@ jobs:
      - uses: actions/setup-python@v5
      - name: Build
        run: |
+         pip install -U sphinx
          make html
      - name: Upload artifact
        uses: actions/upload-pages-artifact@v3
